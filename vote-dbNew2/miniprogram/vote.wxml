@@ -1,0 +1,6 @@
+<swiper bindchange="changeSwiper">
+  <swiper-item wx:for="{{imglist}}" wx:key="unique"  	> 
+    <image mode="aspectFit" src="{{item.fileid}}" bindtap="vote" data-fileid="{{item.fileid}}" />
+    <!-- <text>{{item.vote}}</text> -->
+  </swiper-item>
+</swiper>

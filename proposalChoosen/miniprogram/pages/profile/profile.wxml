@@ -1,0 +1,23 @@
+<!-- 标签页标题 -->
+<view class="tab">
+	<view class="tab-item {{tab==0?'active':''}}" bindtap="changeItem" data-item="0">Web前端</view>
+	<view class="tab-item {{tab==1?'active':''}}" bindtap="changeItem" data-item="1">人工智能</view>
+	<view class="tab-item {{tab==2?'active':''}}" bindtap="changeItem" data-item="2">移动应用</view>
+	<view class="tab-item {{tab==3?'active':''}}" bindtap="changeItem" data-item="3">手机游戏</view>
+</view>
+<!-- 内容区域 -->
+<view class="content">
+	<swiper current="{{item}}" bindchange="changeTab">
+		<swiper-item wx:for="{{list}}" wx:key="unique">
+			<scroll-view scroll-y="true" style="height:100%">
+        <view>排名--成绩</view>
+				<view wx:for="{{item}}" wx:key="unique" wx:for-item="student">{{student.rank}}---{{student.total}} </view>
+			</scroll-view>
+		</swiper-item>
+	</swiper>
+</view>
+
+<view class="player" style="">
+<view>学号:{{user.sn}} 姓名:{{user.name}} 成绩:{{user.total}} 方向:{{user.result}}</view>
+	<button bindtap="rank">修改志愿</button>
+</view>

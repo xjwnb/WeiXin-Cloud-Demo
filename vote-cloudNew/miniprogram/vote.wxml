@@ -1,0 +1,5 @@
+  <swiper  bindchange="schange" circular="true" current="{{swiperCurrent}}">
+      <swiper-item wx:for="{{candidates}}" wx:key="unique">
+        <image class='{{cssClass[index] ? "image changeImage" : ""}}'  mode="aspectFit" src="{{item.fileID}}" bindtap="tap" bindlongpress="long"/>
+      </swiper-item>
+  </swiper> 

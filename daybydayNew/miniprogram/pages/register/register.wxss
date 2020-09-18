@@ -1,0 +1,17 @@
+.register {
+  width: 600rpx;
+  height: 300rpx;
+  padding: 30rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 5rpx solid;
+  border-image: linear-gradient(to right, #2654c7, #23b7cb) 1 10;
+
+}
+
+.tishi {
+  text-align: center;
+  margin-bottom: 30prx;
+}

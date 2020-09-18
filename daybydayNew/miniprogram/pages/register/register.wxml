@@ -1,0 +1,10 @@
+<view class="register">
+	<view class="tishi">请绑定你的8位学号</view>
+	<form bindsubmit="formsubmit">
+  <van-cell-group>
+		<van-field name="sn" placeholder="8位学号" />
+		<van-field name="name" placeholder="姓名" />
+    </van-cell-group>
+		<button type="primary" form-type="submit">绑定</button>
+	</form>
+</view>

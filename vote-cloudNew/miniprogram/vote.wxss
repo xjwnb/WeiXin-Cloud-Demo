@@ -1,0 +1,25 @@
+page {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+image {
+  width: 100%;
+  height: 100vh;
+}
+
+.image {
+  border: 20rpx solid;
+  border-image: linear-gradient(to right, #2654c7, #23b7cb) 1 10;
+}
+
+.changeImage{
+  width: 710rpx;
+  height: 1166rpx;
+}

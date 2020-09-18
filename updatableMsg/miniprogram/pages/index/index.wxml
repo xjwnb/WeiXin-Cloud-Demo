@@ -1,0 +1,9 @@
+<view>第17组</view>
+<view>肖佳炜、陈子聪、朱建军</view>
+<view>完成情况{{memberCount}}/{{roomLimit}}</view>
+<view>
+  分享来自微信群： 
+  <open-data type="groupName" open-gid="{{groupId}}" default-text="未知"></open-data>
+</view>
+<button open-type="share">转发动态消息</button>
+<button bindtap="end">结束动态消息</button>

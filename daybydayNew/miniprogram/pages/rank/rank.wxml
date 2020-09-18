@@ -1,0 +1,6 @@
+
+<van-cell-group>
+	<block wx:for="{{ ranklist }}" wx:key="key">
+		<van-cell title="排名:{{  item.pm }}-{{ item.sn }} {{ item.name }}" value="总得分：{{ item.score }}" />
+	</block>
+</van-cell-group>

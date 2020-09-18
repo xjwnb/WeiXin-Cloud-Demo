@@ -1,0 +1,1 @@
+<button bindtap="query">数组查询</button>
